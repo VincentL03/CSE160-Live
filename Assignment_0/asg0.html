@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="asg0.js"></script>
+<script src="lib/webgl-debug.js"></script>
+<script src="lib/webgl-utils.js"></script>
+<script src="lib/cuon-matrix-cse160.js"></script>
+<script src="lib/cuon-utils.js"></script>
+<script type=text/javascript src="asg0.js"></script>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Asgn0 Vincent Liu</title>
+</head>
+<body onload="main()">
+
+<canvas id="asg0" width="400" height="400"></canvas>
+<br>
+
+<!-- step 3: x and y input -->
+<label for="v1">v1:</label>
+<input type="text" id="v1_x" name="v1_x" required
+       size="10" placeholder="x">
+<input type="text" id="v1_y" name="v1_y" required
+       size="10" placeholder="y">
+<br>
+<!-- x and y input for v2 -->
+<label for="v2">v2:</label>
+<input type="text" id="v2_x" name="v2_x" required
+       size="10" placeholder="x">
+<input type="text" id="v2_y" name="v2_y" required
+       size="10" placeholder="y">
+<br> 
+<button onclick="handleDrawEvent()">Draw</button>
+<br>
+<br>
+
+<!-- operations selection -->
+<label for="operation">Operation </label>
+<select id="operation">
+    <option value="add">Add</option>
+    <option value="subtract">Subtract</option>
+    <option value="divide">Divide</option>
+    <option value="multiply">Multiply</option>
+    <option value="magnitude">Magnitude</option>
+    <option value="norm">Normalize</option>
+    <option value="angle">Angle between</option>
+    <option value="area">Area</option>
+</select>
+<br>
+<label for="operation">Scalar</label>
+<input type="text" id="scalar" name="scalar" required
+       size="10" placeholder="scalar">
+<br>
+<button onclick="handleDrawOperationEvent()">
+       Draw
+</button>
+
+</body>
+</html>
