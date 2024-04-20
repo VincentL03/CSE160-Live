@@ -25,20 +25,24 @@ function main() {
     const cube = new THREE.BoxGeometry(1, 1, 1);
     const sphere = new THREE.SphereGeometry(1, 32, 32);
     const cylinder = new THREE.CylinderGeometry(1, 1, 2, 32);
+    const cylinder2 = new THREE.CylinderGeometry(1, 1, 30, 32);
 
     const cubeMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000 });
     const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xFFFF00 });
     const cylinderMaterial = new THREE.MeshPhongMaterial({ color: 0x0000FF });
-
+    const cylinderMaterial2 = new THREE.MeshPhongMaterial({ color: 0x00FFFF });
+    
     const cubeMesh = new THREE.Mesh(cube, cubeMaterial);
     const sphereMesh = new THREE.Mesh(sphere, sphereMaterial);
     const cylinderMesh = new THREE.Mesh(cylinder, cylinderMaterial);
+    const cylinderMesh2 = new THREE.Mesh(cylinder2, cylinderMaterial2);
 
     cubeMesh.position.set(0, 5, -5);
     sphereMesh.position.set(10, 10, 10);
     cylinderMesh.position.set(0, 5, 30);
+    cylinderMesh2.position.set(0, 0, 0);
 
-    scene.add(cubeMesh, sphereMesh, cylinderMesh);
+    scene.add(cubeMesh, sphereMesh, cylinderMesh, cylinderMesh2);
 
     function animate() {//animated cube
         cubeMesh.rotation.x += 0.01;
