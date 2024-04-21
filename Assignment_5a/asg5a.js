@@ -6,7 +6,7 @@ import {MTLLoader} from './lib/MTLLoader.js';
 function main() {
     const canvas = document.querySelector('#c');
     const renderer = new THREE.WebGLRenderer({ canvas });
-    renderer.setSize(1700, 900);
+
 
     const fov = 75;
     const aspect = 2;  // the canvas default
