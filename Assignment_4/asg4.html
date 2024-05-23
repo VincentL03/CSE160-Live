@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment_4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script src="lib/cuon-utils.js"></script>
+<script src="lib/cuon-matrix.js"></script>
+<script src="asg4.js"></script>
+<script src="camera.js"></script>
+
+<body onmousedown="shift_press(event)">
+<canvas id="webgl" width="800" height="600"></canvas>
+<div id="fps">FPS:</div>
+<br><br>
+
+Reset Camera <button type="button" id="camera_reset">Reset</button><p>
+Head <input type="range" min="-20" max="20" value="0" class="slider" id="head_slider"> |
+Wings <input type="range" min="0" max="100" value="50" class="slider" id="wing_slider"> | 
+Mane on head <input type="range" min="-20" max="20" value="0" class="slider" id="mane_slider">
+</p>
+
+<p></p>
+Position of Light:
+    X:<input type="range" min="-60" max="60" value="0" class="slider" id="lightPosX"> |
+    Y:<input type="range" min="0" max="60" value="10" class="slider" id="lightPosY"> |
+    Z:<input type="range" min="-60" max="60" value="0" class="slider" id="lightPosZ"> |
+<p></p>
+Color of Light:
+    R:<input type="range" min="0" max="10" value="10" class="slider" id="lightR"> |
+    G:<input type="range" min="0" max="10" value="10" class="slider" id="lightG"> |
+    B:<input type="range" min="0" max="10" value="10" class="slider" id="lightB"> |
+    <!-- Brightness:<input type="range" min="1" max="10" value="10" class="slider" id="lightBrightness"> | -->
+<p></p>
+Animation:
+    <button type="button" id="start">Start</button>
+    <button type="button" id="stop">Stop</button>
+|
+Light:
+    <button type="button" id="lightToggleOn">On</button>
+    <button type="button" id="lightToggleOff">Off</button>
+|
+Specular Test:
+    <button type="button" id="specularToggleOn">On</button>
+    <button type="button" id="specularToggleOff">Off</button>
+|
+Normalized:
+    <button type="button" id="Normalize_On">On</button>
+    <button type="button" id="Normalize_Off">Off</button>
+
+</body>
+</html>
