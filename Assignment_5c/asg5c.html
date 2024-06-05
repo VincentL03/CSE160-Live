@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title>Assignment_5c</title>
+  </head>
+  <b><h1>Night Ride</h1></b>
+  <body>
+    <canvas id="c" width="1200" height="600"></canvas>
+  </body>
+    
+  <script type="importmap">
+    {
+        "imports": {
+            "three": "./lib/three.module.js"
+        }
+    }
+  </script>
+
+
+  <script type="module" src="asg5c.js"></script>
+  <p></p>
+
+  Position of Light:
+  X: <input type="range" min="-100" max="100" value="10" id="lightPosX_Slider"> |
+  Y: <input type="range" min="5" max="60" value="10" id="lightPosY_Slider"> |
+  Z: <input type="range" min="-100" max="100" value="10" id="lightPosZ_Slider"> |
+<p></p>
+
+  Position of Light:
+  X: <input type="input" min="-100" max="100" value="10" id="lightPosX"> |
+  Y: <input type="input" min="5" max="60" value="10" id="lightPosY"> |
+  Z: <input type="input" min="-100" max="100" value="10" id="lightPosZ"> |
+  <button type="button" id="confirm">Confirm</button>
+<p></p>
+
+Animation for Sphere:
+    <button type="button" id="start">Start</button>
+    <button type="button" id="stop">Stop</button>
+|
+Animation for Motorcycle:
+    <button type="button" id="start_motorcycle">Start</button>
+    <button type="button" id="stop_motorcycle">Stop</button>
+|
+
+
+  <p>Made a scene of a road with trees and a building on the side of road</p>
+  <p></p>
+  <p>Requirements for Asgn5:</p>
+  <p>3 primary shapes: Cube, Cylinder, Sphere. Cube is animated as is a light source (colored red), Cylinder is blue, Sphere is yellow.</p>
+  <p>Red cube is textured, skybox is textured</p>
+  <p>Custom 3d models: a scooter and building</p>
+  <p>Perspective camera moves with orbit controls</p>
+  <p>Multiple light sources and light types</p>
+  <p>Skybox exists</p>
+  <p>There should be at least 20 shapes in this scene in total (trees and road included)</p>
+  
+
+  </html>
